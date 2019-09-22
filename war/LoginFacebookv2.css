@@ -1,0 +1,26 @@
+.header{
+	background-color: #436aa5;
+}
+.logoFacebook{
+	max-width: 170px;
+}
+
+.contentCurve{
+	border-bottom: 1px solid #dddfe2;
+    font-size: 1px;
+    height: 8px;
+    margin-bottom: 8px;
+}
+
+.content {
+	background: linear-gradient(white, #D3D8E8);
+}
+
+.label1{
+	background-color: white;
+	font-size: 20px;
+}
+
+.badge{
+	background-color: white;
+}

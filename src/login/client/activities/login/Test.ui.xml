@@ -1,0 +1,143 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui"
+	xmlns:dp="urn:import:com.google.gwt.user.datepicker.client"
+	xmlns:b2="urn:import:com.github.gwtbootstrap.datepicker.client.ui">
+	<g:HTMLPanel>
+	  	<b:FluidContainer addStyleNames="header">
+		   <b:FluidRow>
+				<b:Column size="6">
+					<g:HTMLPanel addStyleNames="logoFacebook">
+						<b:Image url="Facebook-logo.png"></b:Image>
+					</g:HTMLPanel>
+				</b:Column>
+				<b:Column size="6">
+					<b:FluidRow>
+						<b:Column size="4">
+		    				<b:Label addStyleNames="label1" >Email hoặc điện thoại</b:Label>
+		    			</b:Column>	
+		    			<b:Column size="4">
+		    				<b:Label addStyleNames="label1">Mật khẩu</b:Label>
+		    			</b:Column>	
+		    		</b:FluidRow>		
+		    		<b:FluidRow>
+						<b:Column size="4">
+		    					<b:TextBox size="11" ui:field=" usernameLogin" ></b:TextBox>
+		    			</b:Column>
+		    			<b:Column size="4">
+		    					<b:PasswordTextBox size="11" ui:field=" passwordLogin"></b:PasswordTextBox>
+		    			</b:Column>	
+		    			<b:Column size="4">
+		    					<b:Button ui:field="signInButton">Đăng nhập</b:Button>
+		    			</b:Column>	
+		    		</b:FluidRow>
+		    		<b:FluidRow>
+						<b:Column size="4">
+						</b:Column>	
+						<b:Column size="4">
+		    				<g:Anchor ui:field="forgotPassword">Quên tài khoản?</g:Anchor>
+		    			</b:Column>	
+		    		</b:FluidRow>
+				</b:Column>
+			</b:FluidRow>
+		</b:FluidContainer>
+		
+		<b:FluidContainer addStyleNames=" content">
+			<b:FluidRow>
+				<b:Column size="6">
+					<b:FluidRow>
+						<b:Label>Facebook giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống của bạn.</b:Label>
+					</b:FluidRow>
+					<b:FluidRow>
+						<b:Image url="global.png"></b:Image>
+					</b:FluidRow>
+				</b:Column>
+				<b:Column size="6">
+					<b:Heading size="1" >Đăng ký</b:Heading>
+					<b:Heading size="3" >Nhanh chóng và dễ dàng</b:Heading>
+					<b:Form>
+							<b:FluidRow>
+								<b:Column size="4">
+									<b:TextBox size="12" ui:field="firstName" ></b:TextBox>
+								</b:Column>
+								<b:Column size="4">
+									<b:TextBox size="12" ui:field="lastName" ></b:TextBox>
+								</b:Column>
+							</b:FluidRow>
+							<b:FluidRow>
+								<b:Column size="8">
+									<b:TextBox size="12" ui:field="contact" ></b:TextBox>
+								</b:Column>
+							</b:FluidRow>
+							<b:FluidRow>
+								<b:Column size="8">
+									<b:PasswordTextBox size="12" ui:field="password" ></b:PasswordTextBox>
+								</b:Column>
+							</b:FluidRow>
+							<b:FluidRow>
+								<b:Label addStyleNames=" ngaySinhText">Ngày sinh</b:Label>
+							</b:FluidRow>
+							<b:FluidRow ui:field="test">
+								<dp:DateBox ui:field="dateBirth"></dp:DateBox>
+							</b:FluidRow>
+							<b:FluidRow>
+								<b:Label addStyleNames=" ngaySinhText">Giới tính</b:Label>
+							</b:FluidRow>
+							<b:FluidRow>
+								<b:Column size="1">
+									<b:RadioButton name="sex" addStyleNames=" radioText" ui:field="femaleRadioButton">Nữ</b:RadioButton>
+								</b:Column>
+								<b:Column size="1">
+									<b:RadioButton name="sex" addStyleNames=" radioText marginLeft10" ui:field="maleRadioButton">Nam</b:RadioButton>
+								</b:Column>
+								<b:Column size="2">
+									<b:RadioButton name="sex" addStyleNames=" radioText marginLeft10" ui:field="gayRadioButton">Tùy chỉnh</b:RadioButton>
+								</b:Column>
+							</b:FluidRow>
+							<b:FluidRow>
+								<g:HTMLPanel>
+								<div class="haha">
+									<p style ="color: #777;
+	    								font-size: 11px;
+	    								width: 316px;"	>
+										Bằng cách nhấp vào đăng ký, bạn đồng ý với <a>Điều khoản</a>, <a>Chính sách dữ liệu</a> và <a>Chính sách cookie</a> của chúng tôi.
+										Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận bất cứ lúc nào.
+									</p>
+								</div>
+								</g:HTMLPanel>
+							</b:FluidRow>
+							<b:FluidRow>
+								<b:Button addStyleNames=" signUpButton" ui:field="signUpButton">Đăng ký</b:Button>
+							</b:FluidRow>
+							<b:FluidRow>
+								<g:HTMLPanel>
+									<p>
+										<a>Tạo trang</a> dành cho người nổi tiếng, nhãn hiệu hoặc doanh nghiệp.
+									</p>
+								</g:HTMLPanel>
+							</b:FluidRow>
+					</b:Form>
+				</b:Column>
+			</b:FluidRow>
+		</b:FluidContainer>
+		
+		<b:FluidContainer>
+			<b:FluidRow>
+				<b:Row>
+					<b:Column size="1"><g:Anchor>Tiếng Việt</g:Anchor></b:Column>
+					<b:Column size="1"><g:Anchor>English (UK</g:Anchor></b:Column>
+					<b:Column size="1"><g:Anchor>中文(台灣)</g:Anchor></b:Column>
+					<b:Column size="1"><g:Anchor>日本語</g:Anchor></b:Column>
+					<b:Column size="1"><g:Anchor>Español</g:Anchor></b:Column>
+					<b:Column size="1"><g:Anchor>Português (Brasil)</g:Anchor></b:Column>
+					<b:Column size="1"><g:Anchor>Deutsch</g:Anchor></b:Column>
+					<b:Column size="1"><g:Anchor>Italiano</g:Anchor></b:Column>
+				</b:Row>
+				<b:FluidRow addStyleNames="contentCurve"></b:FluidRow>
+				<b:FluidRow>
+				</b:FluidRow>
+			</b:FluidRow>
+		</b:FluidContainer>
+	</g:HTMLPanel>
+</ui:UiBinder> 

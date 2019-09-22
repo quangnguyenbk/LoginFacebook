@@ -1,0 +1,89 @@
+.header{
+	background-color: #436aa5;
+}
+.logoFacebook{
+	max-width: 170px;
+}
+
+.contentCurve{
+	border-bottom: 1px solid #dddfe2;
+    font-size: 1px;
+    height: 8px;
+    margin-bottom: 8px;
+}
+
+.content {
+	background: linear-gradient(white, #D3D8E8);
+}
+a, a:visited {
+cursor: pointer;
+color: #9cb4d8;
+   font-weight: normal; 
+   text-decoration: none;
+}
+a:hover{
+cursor: pointer;
+color: #9cb4d8;
+}
+
+.haha > p> a{
+	color: red;
+}
+.signUpButton{
+	border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 1px;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+    min-width: 194px;
+    padding: 7px 20px;
+    text-align: center;
+    font-size: 19px;
+    font-family: inherit;
+}
+a.btn {
+    color: white;
+}
+
+.buttonSignIn{
+background: none;
+background-color: #4267b2;
+   border-color: #29487d;
+   border-radius: 2px;
+   cursor: pointer;
+   display: inline-block;
+   font-size: 12px;
+   -webkit-font-smoothing: antialiased;
+   font-weight: bold;
+   line-height: 18px;
+   padding: 2px 6px;
+   text-align: center;
+   text-decoration: none;
+   text-shadow: none;
+   vertical-align: top;
+   white-space: nowrap;
+   color: white;
+}
+
+.labelHeader{
+	display: inline-block;
+    padding: 2px 4px;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 1200px){
+.test{
+	padding-left: 15%;
+    padding-right: 15%;
+}
+}

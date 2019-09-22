@@ -1,0 +1,50 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel>
+		<g:Label>Thong tin ca nhan</g:Label>
+		<table>
+			<tr>
+				<td>
+					<g:Label>Họ và tên:</g:Label>
+				</td>
+				<td>
+					<g:Label ui:field="fullName"></g:Label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>Giới tính:</span>
+				</td>
+				<td>
+					<g:Label ui:field="sex"></g:Label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>SDT:</span>
+				</td>
+				<td>
+					<g:Label ui:field="phone"></g:Label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>Email:</span>
+				</td>
+				<td>
+					<g:Label ui:field="email"></g:Label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>Ngày sinh:</span>
+				</td>
+				<td>
+					<g:Label ui:field="birthDate"></g:Label>
+				</td>
+			</tr>
+		</table>
+		<g:Button ui:field="logoutButton">Logout</g:Button>
+	</g:HTMLPanel>
+</ui:UiBinder> 

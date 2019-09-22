@@ -1,0 +1,3 @@
+# Module loginfacebook
+# RPC service class, partial path of RPC policy file
+login.client.UserService, 1B4686FE16377707D64671CDCD7D71E0.gwt.rpc

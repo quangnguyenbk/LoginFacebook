@@ -1,0 +1,2 @@
+serviceClass: login.client.UserService
+path: 1B4686FE16377707D64671CDCD7D71E0.gwt.rpc

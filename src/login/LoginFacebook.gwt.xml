@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='loginfacebook'>
+	<!-- Inherit the core Web Toolkit stuff.                        -->
+	<inherits name='com.google.gwt.user.User'/>
+	<inherits name='com.google.gwt.user.theme.clean.CleanResources'/>
+	
+
+	<!-- Other module inherits                                      -->
+	<inherits name="com.google.gwt.activity.Activity"/>
+	<inherits name="com.google.gwt.place.Place"/>
+	
+	<inherits name="com.github.gwtbootstrap.Bootstrap"/>
+	<set-property name="bootstrap.responsiveDesign" value="true"/>
+	<!-- English language, independent of country -->
+	<!-- Specify the app entry point class.                         -->
+	<entry-point class='login.client.LoginFacebook'/>
+	
+	<!-- Specify the paths for translatable code                    -->
+	  <source path='client'/>
+	  <source path='shared'/>
+	<!-- Use ClientFactoryImpl by default -->
+	  <replace-with class="login.client.ClientFactoryImpl">
+	  <when-type-is class="login.client.ClientFactory"/>
+	  </replace-with>
+	  
+	<source path='resources'/>
+    <replace-with class="login.resources.TestConfigurator">
+      <when-type-is class="com.github.gwtbootstrap.client.ui.config.Configurator"/>
+    </replace-with>
+    <public path="resources">
+      <exclude name="** /*.java"/>
+      <exclude name="** /*.class"/>
+    </public>
+	<!-- allow Super Dev Mode -->
+	<add-linker name="xsiframe"/>
+</module>
